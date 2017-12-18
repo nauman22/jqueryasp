@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>MB.FileBrowser</id>
+    <version>1.1.8</version>
+    <title>MB.FileBrowser</title>
+    <authors>Bruno</authors>
+    <owners>Bruno</owners>
+    <projectUrl>http://filemanager.sisteminterattivi.org/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>File Browser suitable for use with CKEditor end Tiny MCE</description>
+    <summary />
+    <copyright>Bruno Milgiaretti</copyright>
+    <language>en-US</language>
+    <tags>ckeditor tinumce filebrowser</tags>
+  </metadata>
+</package>

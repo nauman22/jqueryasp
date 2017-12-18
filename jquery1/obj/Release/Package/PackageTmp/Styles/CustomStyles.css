@@ -1,0 +1,34 @@
+﻿
+.bodyBackground {
+    background: #a5b2f1;
+    
+}
+
+.panelbg {
+    background: #9cccf5;
+}
+
+.available {
+    display: inline;
+    color: Green;
+}
+
+.used {
+    display: inline;
+    color: Red;
+}
+
+.required {
+    display: inline;
+    color: Red;
+}
+
+.hide {
+    display: none;
+}
+
+.labelForError{
+    font-family: Arial;
+    font-size: small;
+    font-weight: normal
+}

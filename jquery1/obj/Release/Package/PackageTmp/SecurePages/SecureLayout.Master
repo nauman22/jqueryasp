@@ -1,0 +1,18 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SecureLayout.master.cs" Inherits="jquery1.SecurePages.SecureLayout" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="../bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-1.11.2.min.js"></script>
+    <title>Welcome</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+
+    </div>
+    </form>
+</body>
+</html>

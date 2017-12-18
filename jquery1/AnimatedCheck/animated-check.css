@@ -1,0 +1,85 @@
+$swift-ease-in-out-timing-function: cubic-bezier(0.35, 0, 0.25, 1);
+$checkmarkHeight: 40px;
+
+.checkmark-container {
+  height: $checkmarkHeight;
+  width: $checkmarkHeight;
+  border-radius: 50%;
+
+  .checkmark {
+    border-radius: 50%;
+    display: block;
+    stroke: $balanced;
+    box-shadow: inset 0px 0px 0px $balanced;
+  }
+
+  .checkmark-outline {
+    stroke: $balanced;
+    stroke-width: 1;
+  }
+
+  .checkmark-circle {
+    stroke: $transparent;
+    stroke-width: 1;
+    fill: none;
+    stroke-miterlimit: 10;
+  }
+
+  .checkmark-check {
+    stroke: $transparent;
+    transform-origin: 50% 50%;
+  }
+
+  &.checked {
+    .checkmark {
+      stroke-width: 1;
+      stroke: #fff;
+      stroke-miterlimit: 10;
+      animation: checkmark-fill .4s ease-in-out .4s forwards, checkmark-scale .3s ease-in-out .9s both;
+    }
+
+    g {
+      .checkmark-outline {
+        stroke: $transparent;
+        stroke-width: 1;
+      }
+
+      .checkmark-circle {
+        stroke: $balanced;
+        stroke-dasharray: 166;
+        stroke-dashoffset: 166;
+        animation: checkmark-stroke .6s $swift-ease-in-out-timing-function forwards;
+      }
+
+      .checkmark-check {
+        stroke: white;
+        stroke-dasharray: 48;
+        stroke-dashoffset: 48;
+        animation: checkmark-stroke .3s $swift-ease-in-out-timing-function .8s forwards;
+      }
+    }
+
+
+  }
+}
+
+@keyframes checkmark-stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes checkmark-scale {
+  0%, 100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+
+@keyframes checkmark-fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 20px $balanced;
+  }
+}

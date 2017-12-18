@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)file:///C:/Users/nauman/Downloads/Fall%202015_IT430_1_SOL.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    
+    <title>Registration Form | Student ID</title>
+	<style>
+	
+body{
+	width: 600px;
+    margin-left: 10%;
+    border: thin solid #000000
+
+}
+.labelClass{
+    float: left;
+    width: 30%;
+	margin-left: 20px;
+  	}
+
+input{
+  	width: 60%;
+	margin-bottom:10px;
+	}
+
+#submit{
+  width: 80px;
+  margin-left: 20px;
+  background: #FF0000;
+  moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 5px;
+  color: white;
+  font: bold/ "Times New Roman", Times, serif;
+}
+#registration{
+   background-color: #A6846A;
+   }
+
+H2{
+	color: White;
+	margin-left: 15px;
+	margin-right: 15px;
+	background-color: #5F6874;
+ }
+
+p{
+    margin-left: 20px;
+
+    }
+select{
+	width: 45%;
+	margin-bottom: 10px;
+	background-color: #D0E6E9;
+    }
+hr{
+  margin-bottom: 35px;
+  color: blue;
+  size: 20px;
+}
+#personal input{
+	width:50%;
+	margin-left: 20px;
+	
+	}
+#tbl2{
+	 margin-left: 30px;
+	 width: 100%;
+	
+
+
+    </style>
+
+  <!-- my css end here -->
+
+
+</head>
+  
+
+  <body>
+  <header>
+  
+  <h2 style="background: #FB9619">Register Account</h2>
+  
+  <p>If you already have an account with us, please login at the <a href="file:///C:/Users/nauman/Downloads/login.html" style="color:red;">login page</a>
+  </p></header>
+  <!-- br-->
+
+  	
+    <h2>Your Personal Detail</h2>
+
+  <div id="personal">
+   
+  <form action="file:///C:/Users/nauman/Downloads/Fall%202015_IT430_1_SOL.html#">
+  
+            <span class="labelClass">First Name: </span><input type="text" name="fname" value="First Name"><br>
+            <span class="labelClass">Last Name: </span><input type="text" name="lname" value="Last Name"><br>
+            <span class="labelClass">Email-ID: </span><input type="text" name="email" value="Email ID"><br>
+            <span class="labelClass">Telephone: </span><input type="tel" name="telephone" value="Telephone Number"><br>
+            <span class="labelClass">Fax:</span><input type="text" name="fax" value="Fax Number"><br>
+    </form></div>
+            
+            
+   
+    
+            <h2>Your Address</h2>
+            
+   <div id="address">
+   
+            <span class="labelClass">Company: </span><input type="text" name="co" value="Company Name"><br>
+            <span class="labelClass">Address1: </span><input type="text" name="adr1" value="Address1"><br>
+            <span class="labelClass">Address2: </span><input type="text" name="adr2" value="Address2"><br>
+            <span class="labelClass">City: </span><input type="text" name="city" value="City Name"><br>
+            <span class="labelClass">Post Code: </span><input type="text" name="pcode" value="Fax Number"><br>
+            <span class="labelClass">Country:
+
+     </span><select name="country" size="1" id="select">
+                                        <option value="Pakistan" selected="selected">Pakistan</option>
+                                        <option value="India">India</option>
+                                        <option value="Afghanistan">Afghanistan</option>
+                                        <option value="Bangladesh">Bangladesh</option>
+                                        <option value="Nepal">Nepal</option>
+                                </select>
+
+            <span class="labelClass">State:
+     </span><select name="state" size="1">
+                                        <option selected="selected">---Select Status---</option>
+                                        <option value="1">KPK</option>
+                                        <option value="2">Punjab</option>
+                                        <option value="3">Sindh</option>
+                                        <option value="4">Balochistan</option>
+                                        <option value="5">AJK</option>
+                                        <option value="6">Gilgit-Baltistan</option>
+                                </select>
+    </div>
+
+    
+        <h2>Your Password</h2>
+        
+   <div id="password">
+        
+       <span class="labelClass">Password </span><input type="password" name="pwd"><br>
+       <span class="labelClass">Password Confirm: </span><input type="password" name="pwd2"><br>
+       
+    </div>
+
+
+  
+    <h2>News Letter</h2>
+       <table width="70%">
+         <tbody><tr>
+         		
+ 			  <td>
+           	 <p> Subscribe</p>
+             </td>       
+        
+           	  <td>
+           	 <label>
+             <input type="radio" name="radio" value="Yes" id="yes" checked="checked" style="width: 15%; -webkit-box-shadow: 0px 0px; box-shadow: 0px 0px;">
+             Yes
+             </label>
+             </td>
+         
+         
+       	   <td>
+          	 <label>
+             <input type="radio" name="radio" value="No" id="No" style="width:15%">
+             No
+             </label>
+             </td>
+         </tr>
+       </tbody></table>
+       
+		<hr>
+      	<hr>
+        
+        
+      
+        <table id="tbl2">
+        <tbody><tr>
+        <td width="55%"><p>I have read and agree to the <font color="red"><b>Privacy Policy</b></font></p></td>
+        <td width="auto" margin-left="2px"><input id="chkagree" type="checkbox" name="agree" value="agree"></td>
+        <td><input id="submit" type="submit" value="Submit"></td>
+        </tr>
+        </tbody></table>
+
+  
+
+
+
+
+
+  
+
+  
+	 </body></html>
